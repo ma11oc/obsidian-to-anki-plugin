@@ -503,7 +503,7 @@ export class AllFile extends AbstractFile {
       (idPosition: number, index: number) => {
         const identifier: number | null = this.note_ids[index]
         if (identifier) {
-          calloutInserts.push([idPosition, '>\n> ' + id_to_str(identifier, false, this.data.comment)])
+          calloutInserts.push([idPosition, '> ' + id_to_str(identifier, false, this.data.comment)])
         }
       }
     )
